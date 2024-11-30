@@ -33,7 +33,7 @@ const Header = () => {
                   fontSize: "1rem",
                 }}
               >
-                Create Resume
+                Home
               </a>
             </li>
             <li style={{ margin: "0 15px" }}>
