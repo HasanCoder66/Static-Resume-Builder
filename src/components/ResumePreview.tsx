@@ -1,6 +1,6 @@
 import React from "react";
 
-const ResumePreview: React.FC<{ data: any }> = ({ data }) => {
+const ResumePreview: React.FC = () => {
   return (
     <div className="resume-preview" style={{ fontFamily: "Arial, sans-serif", color: "#333" }}>
       {/* Header Section */}
@@ -41,7 +41,7 @@ const ResumePreview: React.FC<{ data: any }> = ({ data }) => {
       <section style={{ marginTop: "20px" }}>
         <h2 style={{ borderBottom: "1px solid #ddd" }}>Skills</h2>
         <ul style={{ listStyleType: "disc", marginLeft: "20px" }}>
-          {(data?.skills || [
+          {( [
             "HTML, CSS, JavaScript",
             "React.js, Next.js",
             "Node.js, MongoDB",
@@ -56,7 +56,7 @@ const ResumePreview: React.FC<{ data: any }> = ({ data }) => {
       {/* Employment History Section */}
       <section style={{ marginTop: "20px" }}>
         <h2 style={{ borderBottom: "1px solid #ddd" }}>Employment History</h2>
-        {(data?.experience || [
+        {( [
           {
             title: "Associate Developer",
             company: "XYZ Company",
@@ -85,7 +85,7 @@ const ResumePreview: React.FC<{ data: any }> = ({ data }) => {
       {/* Education Section */}
       <section style={{ marginTop: "20px" }}>
         <h2 style={{ borderBottom: "1px solid #ddd" }}>Education</h2>
-        {(data?.education || [
+        {([
           {
             degree: "Intermediate in Commerce",
             institution: "Government City College, Moosa Colony",
